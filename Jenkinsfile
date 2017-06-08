@@ -1,5 +1,10 @@
 pipeline {
   agent any
+
+  triggers {
+    pollSCM('* * * * *')
+  }
+
   stages {
     stage('Build') {
       steps {
@@ -45,11 +50,13 @@ pipeline {
         sh 'php artisan migrate:refresh --seed'
       }
     }
-    stage('Test Uniaire') {
+    stage('Test') {
       steps {
         sh './vendor/bin/phpunit'
         echo 'Test'
         sh './vendor/bin/behat'
+        sh './vendor/bin/phpcs app/'
+        sh './vendor/bin/phpcbf app/'
       }
     }
   }
