@@ -62,5 +62,10 @@ MAIL_ENCRYPTION=null
         sh './vendor/bin/phpmd app/ xml codesize --reportfile log.xml --suffixes php'
       }
     }
+    stage('Deploy') {
+      steps {
+        echo 'Deploy'
+      }
+    }
   }
 }
