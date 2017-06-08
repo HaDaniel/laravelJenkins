@@ -4,7 +4,7 @@ pipeline {
   triggers {
     pollSCM('H * * * *')
   }
-  
+
   stages {
     stage('Build') {
       steps {
@@ -15,7 +15,7 @@ pipeline {
     stage('Database') {
       steps {
         echo 'Create Env'
-        sh '''echo "
+        sh '''sudo echo "
 APP_NAME=Laravel
 APP_ENV=local
 APP_KEY=base64:GPxZVxASP7tvf2JhDHmLCD4b83mX4/x/DILxgD8z/KE=
