@@ -52,7 +52,6 @@ MAIL_ENCRYPTION=null
     stage('Test') {
       steps {
         echo 'phpunit'
-        sh './vendor/bin/behat'
         sh './vendor/bin/phpunit'
         echo 'phpcbf'
         sh './vendor/bin/phpcbf app/'
