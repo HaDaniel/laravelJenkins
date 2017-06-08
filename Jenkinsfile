@@ -52,7 +52,6 @@ pipeline {
         echo 'behat'
         sh './vendor/bin/behat'
         echo 'phpcs'
-        sh './vendor/bin/phpcs app/'
         echo 'phpcbf'
         sh './vendor/bin/phpcbf app/'
         echo 'phploc'
