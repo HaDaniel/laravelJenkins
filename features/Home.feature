@@ -6,9 +6,11 @@ Feature: Test
 
   Scenario: Dashboard is locked to guest
     When I go to "home"
-    Then the url should match "login"
-    Then print current URL
-    When I fill in "email" with "ha_daniel@hotmail.fr"
-    When I fill in "password" with "000000"
-    When I press "Login"
-    Then print current URL
+    And the url should match "login"
+    And print current URL
+    And I fill in "email" with "ha_daniel@hotmail.fr"
+    And I fill in "password" with "000000"
+    And I press "loginBtn"
+    When I go to "/home"
+    And print current URL
+    Then I should see "Dashboard"
