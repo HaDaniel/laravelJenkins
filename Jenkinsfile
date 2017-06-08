@@ -50,11 +50,16 @@ pipeline {
     }
     stage('Test') {
       steps {
+        echo 'phpunit'
         sh './vendor/bin/phpunit'
-        echo 'Test'
+        echo 'behat'
         sh './vendor/bin/behat'
+        echo 'phpcs'
         sh './vendor/bin/phpcs app/'
+        echo 'phpcbf'
         sh './vendor/bin/phpcbf app/'
+        echo 'phploc'
+        sh './vendor/bin/phploc app/'
       }
     }
   }
