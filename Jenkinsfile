@@ -49,13 +49,19 @@ pipeline {
       steps {
         echo 'phpunit'
         sh './vendor/bin/phpunit'
+        sh './vendor/bin/phpunit > log.txt'
         echo 'behat'
         sh './vendor/bin/behat'
+        sh './vendor/bin/behat >> log.txt'
         echo 'phpcs'
         echo 'phpcbf'
         sh './vendor/bin/phpcbf app/'
+        sh './vendor/bin/phpcbf >> log.txt'
         echo 'phploc'
         sh './vendor/bin/phploc app/'
+        sh './vendor/bin/phploc >> log.txt'
+        echo 'pdepend'
+        sh './vendor/bin/pdepend --dependency-xml app/ >> log.txt'
       }
     }
   }
