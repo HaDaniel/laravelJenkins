@@ -49,7 +49,7 @@ MAIL_ENCRYPTION=null
             
           },
           "Migrate": {
-            sh 'php artisan migrate'
+            sh 'php artisan migrate:refrsh --seed'
             
           }
         )
