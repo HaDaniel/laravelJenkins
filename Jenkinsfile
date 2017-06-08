@@ -10,7 +10,7 @@ pipeline {
     stage('Database') {
       steps {
         echo 'Env File'
-        sh '''echo "APP_NAME=Laravel
+        sh 'echo "APP_NAME=Laravel
               APP_ENV=local
               APP_KEY=base64:GPxZVxASP7tvf2JhDHmLCD4b83mX4/x/DILxgD8z/KE=
               APP_DEBUG=true
@@ -39,7 +39,7 @@ pipeline {
               MAIL_USERNAME=null
               MAIL_PASSWORD=null
               MAIL_ENCRYPTION=null
-                  "  > .env'''
+              "  > .env'
         sh 'php artisan key:generate'
         sh 'composer dump-autoload'
         sh 'php artisan migrate:refresh --seed'
