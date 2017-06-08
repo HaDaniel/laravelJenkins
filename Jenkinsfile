@@ -47,7 +47,7 @@ pipeline {
     }
     stage('Test Uniaire') {
       steps {
-        sh 'sudo ./vendor/bin/phpunit'
+        sh './vendor/bin/phpunit'
       }
     }
   }
