@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  triggers {
+    pollSCM('* * * * *')
+  }
   stages {
     stage('Build') {
       steps {
@@ -63,8 +66,5 @@ MAIL_ENCRYPTION=null
         sh './vendor/bin/phpmd app/ xml codesize --reportfile log.xml --suffixes php'
       }
     }
-  }
-  triggers {
-    pollSCM('H * * * *')
   }
 }
