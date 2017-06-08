@@ -1,8 +1,5 @@
 pipeline {
   agent any
-    triggers {
-    pollSCM('* * * * *')
-  }
   stages {
     stage('Build') {
       steps {
@@ -10,10 +7,10 @@ pipeline {
         sh 'composer install'
       }
     }
-    stage('Env file') {
+    stage('Database') {
       steps {
-            echo 'Env File'
-            sh '''echo "APP_NAME=Laravel
+        echo 'Env File'
+        sh '''echo "APP_NAME=Laravel
               APP_ENV=local
               APP_KEY=base64:GPxZVxASP7tvf2JhDHmLCD4b83mX4/x/DILxgD8z/KE=
               APP_DEBUG=true
@@ -43,9 +40,9 @@ pipeline {
               MAIL_PASSWORD=null
               MAIL_ENCRYPTION=null
                   "  > .env'''
-            sh 'php artisan key:generate'
-            sh 'composer dump-autoload'
-            sh 'php artisan migrate:refresh --seed'
+        sh 'php artisan key:generate'
+        sh 'composer dump-autoload'
+        sh 'php artisan migrate:refresh --seed'
       }
     }
     stage('Test Uniaire') {
@@ -53,5 +50,8 @@ pipeline {
         sh './vendor/bin/phpunit'
       }
     }
+  }
+  triggers {
+    pollSCM('* * * * *')
   }
 }
