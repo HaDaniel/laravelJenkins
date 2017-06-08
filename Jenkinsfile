@@ -51,7 +51,6 @@ MAIL_ENCRYPTION=null
         echo 'phpunit'
         sh './vendor/bin/phpunit'
         sh './vendor/bin/phpunit > log.txt'
-        sh './vendor/bin/behat >> log.txt'
         echo 'phpcbf'
         sh './vendor/bin/phpcbf app/'
         sh 'echo "------------phpcbf-----------------------------------" >> log.txt'
