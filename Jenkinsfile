@@ -1,10 +1,5 @@
 pipeline {
   agent any
-
-  triggers {
-    pollSCM('H * * * *')
-  }
-
   stages {
     stage('Build') {
       steps {
@@ -56,9 +51,6 @@ MAIL_ENCRYPTION=null
         echo 'phpunit'
         sh './vendor/bin/phpunit'
         sh './vendor/bin/phpunit > log.txt'
-        echo 'behat'
-        sh './vendor/bin/behat'
-        sh 'echo "------------behat-----------------------------------" >> log.txt'
         sh './vendor/bin/behat >> log.txt'
         echo 'phpcbf'
         sh './vendor/bin/phpcbf app/'
@@ -77,5 +69,8 @@ MAIL_ENCRYPTION=null
         sh './vendor/bin/phpmd app/ xml codesize  >> log.txt '
       }
     }
+  }
+  triggers {
+    pollSCM('H * * * *')
   }
 }
