@@ -53,19 +53,14 @@ MAIL_ENCRYPTION=null
         sh './vendor/bin/phpunit > log.txt'
         echo 'phpcbf'
         sh './vendor/bin/phpcbf app/'
-        sh 'echo "------------phpcbf-----------------------------------" >> log.txt'
         sh './vendor/bin/phpcbf >> log.txt'
         echo 'phploc'
         sh './vendor/bin/phploc app/'
-        sh 'echo "------------phploc-----------------------------------" >> log.txt'
         sh './vendor/bin/phploc >> log.txt'
         echo 'pdepend'
-        sh 'echo "------------phploc-----------------------------------" >> log.txt'
         sh './vendor/bin/pdepend --dependency-xml app/ >> log.txt'
         echo 'phpmd'
-        sh 'echo "------------pdepend-----------------------------------" >> log.txt'
         sh './vendor/bin/phpmd app/ xml codesize --reportfile log.xml --suffixes php'
-        sh './vendor/bin/phpmd app/ xml codesize  >> log.txt '
       }
     }
   }
