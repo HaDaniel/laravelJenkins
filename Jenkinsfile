@@ -48,6 +48,8 @@ pipeline {
     stage('Test Uniaire') {
       steps {
         sh './vendor/bin/phpunit'
+        echo 'Test'
+        sh './vendor/bin/behat'
       }
     }
   }
