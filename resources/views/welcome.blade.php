@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel in deploy v2!! 
+                    Laravel deploy v3!! 
                 </div>
 
                 <div class="links">
