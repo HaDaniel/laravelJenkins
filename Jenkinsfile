@@ -62,7 +62,7 @@ MAIL_ENCRYPTION=null
     stage('Deploy') {
       steps {
         echo 'Deploy'
-        sh '''rocketeer deploy --host="192.168.33.40" --username="ubuntu" --password="6fe7b5d4f79c9ddd94b4a8f7" --key=""
+        sh '''php rocketeer.phar deploy --host="192.168.33.40" --username="ubuntu" --password="6fe7b5d4f79c9ddd94b4a8f7" --key=""
 '''
       }
     }
