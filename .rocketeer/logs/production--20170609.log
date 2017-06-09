@@ -1,41 +1,22 @@
 20170609135121
-/usr/local/bin/composer
+20170609135446
+20170609140259
+/usr/bin/git
+$ /usr/bin/git clone "https://HaDaniel:hatanhieu21@github.com/HaDaniel/laravelJenkins.git" "/home/vagrant/Code/laravelJenkins/releases/20170609140826" --branch="prod" --depth="1"
+/usr/bin/git clone "https://HaDaniel:hatanhieu21@github.com/HaDaniel/laravelJenkins.git" "/home/vagrant/Code/laravelJenkins/releases/20170609140826" --branch="prod" --depth="1"
+Cloning into '/home/vagrant/Code/laravelJenkins/releases/20170609140826'...
 /usr/bin/git
 /usr/bin/git
-$ /usr/bin/git --version
-/usr/bin/git --version
-git version 2.7.4
-git version 2.7.4
-/usr/bin/php
-$ mkdir /home/vagrant/Code/laravelJenkins/
-mkdir /home/vagrant/Code/laravelJenkins/
-mkdir: cannot create directory ‘/home/vagrant/Code/laravelJenkins/’: File exists
-$ mkdir -p /home/vagrant/Code/laravelJenkins/releases
-mkdir -p /home/vagrant/Code/laravelJenkins/releases
-
-$ mkdir -p /home/vagrant/Code/laravelJenkins/current
-mkdir -p /home/vagrant/Code/laravelJenkins/current
-
-$ mkdir -p /home/vagrant/Code/laravelJenkins/shared
-mkdir -p /home/vagrant/Code/laravelJenkins/shared
-
-/usr/bin/git
-/usr/bin/git
-$ /usr/bin/git clone "https://HaDaniel:hatanhieu21@github.com/HaDaniel/laravelJenkins.git" "/home/vagrant/Code/laravelJenkins/releases/20170609135446" --branch="master" --depth="1"
-/usr/bin/git clone "https://HaDaniel:hatanhieu21@github.com/HaDaniel/laravelJenkins.git" "/home/vagrant/Code/laravelJenkins/releases/20170609135446" --branch="master" --depth="1"
-Cloning into '/home/vagrant/Code/laravelJenkins/releases/20170609135446'...
-/usr/bin/git
-/usr/bin/git
-$ cd /home/vagrant/Code/laravelJenkins/releases/20170609135446
+$ cd /home/vagrant/Code/laravelJenkins/releases/20170609140826
 $ /usr/bin/git submodule update --init --recursive
-cd /home/vagrant/Code/laravelJenkins/releases/20170609135446
+cd /home/vagrant/Code/laravelJenkins/releases/20170609140826
 /usr/bin/git submodule update --init --recursive
 
 
 /usr/local/bin/composer
-$ cd /home/vagrant/Code/laravelJenkins/releases/20170609135446
+$ cd /home/vagrant/Code/laravelJenkins/releases/20170609140826
 $ /usr/local/bin/composer install --no-interaction --no-dev --prefer-dist
-cd /home/vagrant/Code/laravelJenkins/releases/20170609135446
+cd /home/vagrant/Code/laravelJenkins/releases/20170609140826
 /usr/local/bin/composer install --no-interaction --no-dev --prefer-dist
 Loading composer repositories with package information
 Installing dependencies from lock file
@@ -78,46 +59,46 @@ Generating optimized autoload files
 Generating optimized class loader
 The compiled services file has been removed.
 /usr/bin/npm
-$ cd /home/vagrant/Code/laravelJenkins/releases/20170609135446
+$ cd /home/vagrant/Code/laravelJenkins/releases/20170609140826
 $ /usr/bin/npm install
-cd /home/vagrant/Code/laravelJenkins/releases/20170609135446
+cd /home/vagrant/Code/laravelJenkins/releases/20170609140826
 /usr/bin/npm install
 npm WARN deprecated node-uuid@1.4.8: Use uuid module instead
 npm WARN prefer global marked@0.3.6 should be installed with -g
 npm WARN prefer global node-gyp@3.6.2 should be installed with -g
 
-> node-sass@4.5.3 install /home/vagrant/Code/laravelJenkins/releases/20170609135446/node_modules/node-sass
+> node-sass@4.5.3 install /home/vagrant/Code/laravelJenkins/releases/20170609140826/node_modules/node-sass
 > node scripts/install.js
 
 Cached binary found at /home/vagrant/.npm/node-sass/4.5.3/linux-x64-48_binding.node
 
-> node-sass@4.5.3 postinstall /home/vagrant/Code/laravelJenkins/releases/20170609135446/node_modules/node-sass
+> node-sass@4.5.3 postinstall /home/vagrant/Code/laravelJenkins/releases/20170609140826/node_modules/node-sass
 > node scripts/build.js
 
-Binary found at /home/vagrant/Code/laravelJenkins/releases/20170609135446/node_modules/node-sass/vendor/linux-x64-48/binding.node
+Binary found at /home/vagrant/Code/laravelJenkins/releases/20170609140826/node_modules/node-sass/vendor/linux-x64-48/binding.node
 Testing binary
 Binary is fine
 
-> gifsicle@3.0.4 postinstall /home/vagrant/Code/laravelJenkins/releases/20170609135446/node_modules/gifsicle
+> gifsicle@3.0.4 postinstall /home/vagrant/Code/laravelJenkins/releases/20170609140826/node_modules/gifsicle
 > node lib/install.js
 
   ✔ gifsicle pre-build test passed successfully
 
-> mozjpeg@4.1.1 postinstall /home/vagrant/Code/laravelJenkins/releases/20170609135446/node_modules/mozjpeg
+> mozjpeg@4.1.1 postinstall /home/vagrant/Code/laravelJenkins/releases/20170609140826/node_modules/mozjpeg
 > node lib/install.js
 
   ✔ mozjpeg pre-build test passed successfully
 
-> optipng-bin@3.1.4 postinstall /home/vagrant/Code/laravelJenkins/releases/20170609135446/node_modules/optipng-bin
+> optipng-bin@3.1.4 postinstall /home/vagrant/Code/laravelJenkins/releases/20170609140826/node_modules/optipng-bin
 > node lib/install.js
 
   ✔ optipng pre-build test passed successfully
 
-> pngquant-bin@3.1.1 postinstall /home/vagrant/Code/laravelJenkins/releases/20170609135446/node_modules/pngquant-bin
+> pngquant-bin@3.1.1 postinstall /home/vagrant/Code/laravelJenkins/releases/20170609140826/node_modules/pngquant-bin
 > node lib/install.js
 
   ✔ pngquant pre-build test passed successfully
-/home/vagrant/Code/laravelJenkins/releases/20170609135446
+/home/vagrant/Code/laravelJenkins/releases/20170609140826
 ├─┬ axios@0.15.3 
 │ └─┬ follow-redirects@1.0.0 
 │   └─┬ debug@2.6.8 
@@ -1135,55 +1116,49 @@ Binary is fine
 npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.0.0 (node_modules/chokidar/node_modules/fsevents):
 npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.1.1: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
 /usr/bin/bower
-$ mkdir -p /home/vagrant/Code/laravelJenkins/shared/storage
-mkdir -p /home/vagrant/Code/laravelJenkins/shared/storage
+$ rm -rf /home/vagrant/Code/laravelJenkins/releases/20170609140826/storage/logs
+rm -rf /home/vagrant/Code/laravelJenkins/releases/20170609140826/storage/logs
 
-$ mv /home/vagrant/Code/laravelJenkins/releases/20170609135446/storage/logs /home/vagrant/Code/laravelJenkins/shared/storage/logs
-mv /home/vagrant/Code/laravelJenkins/releases/20170609135446/storage/logs /home/vagrant/Code/laravelJenkins/shared/storage/logs
+$ ln -s /home/vagrant/Code/laravelJenkins/shared/storage/logs /home/vagrant/Code/laravelJenkins/releases/20170609140826/storage/logs-temp
+$ mv -Tf /home/vagrant/Code/laravelJenkins/releases/20170609140826/storage/logs-temp /home/vagrant/Code/laravelJenkins/releases/20170609140826/storage/logs
+ln -s /home/vagrant/Code/laravelJenkins/shared/storage/logs /home/vagrant/Code/laravelJenkins/releases/20170609140826/storage/logs-temp
+mv -Tf /home/vagrant/Code/laravelJenkins/releases/20170609140826/storage/logs-temp /home/vagrant/Code/laravelJenkins/releases/20170609140826/storage/logs
 
-$ ln -s /home/vagrant/Code/laravelJenkins/shared/storage/logs /home/vagrant/Code/laravelJenkins/releases/20170609135446/storage/logs-temp
-$ mv -Tf /home/vagrant/Code/laravelJenkins/releases/20170609135446/storage/logs-temp /home/vagrant/Code/laravelJenkins/releases/20170609135446/storage/logs
-ln -s /home/vagrant/Code/laravelJenkins/shared/storage/logs /home/vagrant/Code/laravelJenkins/releases/20170609135446/storage/logs-temp
-mv -Tf /home/vagrant/Code/laravelJenkins/releases/20170609135446/storage/logs-temp /home/vagrant/Code/laravelJenkins/releases/20170609135446/storage/logs
+$ cd /home/vagrant/Code/laravelJenkins/releases/20170609140826
+$ chmod -R 755 /home/vagrant/Code/laravelJenkins/releases/20170609140826/app/database/production.sqlite
+$ chmod -R g+s /home/vagrant/Code/laravelJenkins/releases/20170609140826/app/database/production.sqlite
+$ chown -R www-data:www-data /home/vagrant/Code/laravelJenkins/releases/20170609140826/app/database/production.sqlite
+cd /home/vagrant/Code/laravelJenkins/releases/20170609140826
+chmod -R 755 /home/vagrant/Code/laravelJenkins/releases/20170609140826/app/database/production.sqlite
+chmod -R g+s /home/vagrant/Code/laravelJenkins/releases/20170609140826/app/database/production.sqlite
+chown -R www-data:www-data /home/vagrant/Code/laravelJenkins/releases/20170609140826/app/database/production.sqlite
+chmod: cannot access '/home/vagrant/Code/laravelJenkins/releases/20170609140826/app/database/production.sqlite': No such file or directory
+$ cd /home/vagrant/Code/laravelJenkins/releases/20170609140826
+$ chmod -R 755 /home/vagrant/Code/laravelJenkins/releases/20170609140826/storage
+$ chmod -R g+s /home/vagrant/Code/laravelJenkins/releases/20170609140826/storage
+$ chown -R www-data:www-data /home/vagrant/Code/laravelJenkins/releases/20170609140826/storage
+cd /home/vagrant/Code/laravelJenkins/releases/20170609140826
+chmod -R 755 /home/vagrant/Code/laravelJenkins/releases/20170609140826/storage
+chmod -R g+s /home/vagrant/Code/laravelJenkins/releases/20170609140826/storage
+chown -R www-data:www-data /home/vagrant/Code/laravelJenkins/releases/20170609140826/storage
+chown: changing ownership of '/home/vagrant/Code/laravelJenkins/releases/20170609140826/storage/logs': Operation not permitted
+$ cd /home/vagrant/Code/laravelJenkins/releases/20170609140826
+$ chmod -R 755 /home/vagrant/Code/laravelJenkins/releases/20170609140826/public
+$ chmod -R g+s /home/vagrant/Code/laravelJenkins/releases/20170609140826/public
+$ chown -R www-data:www-data /home/vagrant/Code/laravelJenkins/releases/20170609140826/public
+cd /home/vagrant/Code/laravelJenkins/releases/20170609140826
+chmod -R 755 /home/vagrant/Code/laravelJenkins/releases/20170609140826/public
+chmod -R g+s /home/vagrant/Code/laravelJenkins/releases/20170609140826/public
+chown -R www-data:www-data /home/vagrant/Code/laravelJenkins/releases/20170609140826/public
 
-$ cd /home/vagrant/Code/laravelJenkins/releases/20170609135446
-$ chmod -R 755 /home/vagrant/Code/laravelJenkins/releases/20170609135446/app/database/production.sqlite
-$ chmod -R g+s /home/vagrant/Code/laravelJenkins/releases/20170609135446/app/database/production.sqlite
-$ chown -R www-data:www-data /home/vagrant/Code/laravelJenkins/releases/20170609135446/app/database/production.sqlite
-cd /home/vagrant/Code/laravelJenkins/releases/20170609135446
-chmod -R 755 /home/vagrant/Code/laravelJenkins/releases/20170609135446/app/database/production.sqlite
-chmod -R g+s /home/vagrant/Code/laravelJenkins/releases/20170609135446/app/database/production.sqlite
-chown -R www-data:www-data /home/vagrant/Code/laravelJenkins/releases/20170609135446/app/database/production.sqlite
-chmod: cannot access '/home/vagrant/Code/laravelJenkins/releases/20170609135446/app/database/production.sqlite': No such file or directory
-$ cd /home/vagrant/Code/laravelJenkins/releases/20170609135446
-$ chmod -R 755 /home/vagrant/Code/laravelJenkins/releases/20170609135446/storage
-$ chmod -R g+s /home/vagrant/Code/laravelJenkins/releases/20170609135446/storage
-$ chown -R www-data:www-data /home/vagrant/Code/laravelJenkins/releases/20170609135446/storage
-cd /home/vagrant/Code/laravelJenkins/releases/20170609135446
-chmod -R 755 /home/vagrant/Code/laravelJenkins/releases/20170609135446/storage
-chmod -R g+s /home/vagrant/Code/laravelJenkins/releases/20170609135446/storage
-chown -R www-data:www-data /home/vagrant/Code/laravelJenkins/releases/20170609135446/storage
-chown: changing ownership of '/home/vagrant/Code/laravelJenkins/releases/20170609135446/storage/logs': Operation not permitted
-$ cd /home/vagrant/Code/laravelJenkins/releases/20170609135446
-$ chmod -R 755 /home/vagrant/Code/laravelJenkins/releases/20170609135446/public
-$ chmod -R g+s /home/vagrant/Code/laravelJenkins/releases/20170609135446/public
-$ chown -R www-data:www-data /home/vagrant/Code/laravelJenkins/releases/20170609135446/public
-cd /home/vagrant/Code/laravelJenkins/releases/20170609135446
-chmod -R 755 /home/vagrant/Code/laravelJenkins/releases/20170609135446/public
-chmod -R g+s /home/vagrant/Code/laravelJenkins/releases/20170609135446/public
-chown -R www-data:www-data /home/vagrant/Code/laravelJenkins/releases/20170609135446/public
-
-$ rm -rf /home/vagrant/Code/laravelJenkins/current
-rm -rf /home/vagrant/Code/laravelJenkins/current
-
-$ ln -s /home/vagrant/Code/laravelJenkins/releases/20170609135446 /home/vagrant/Code/laravelJenkins/current-temp
+$ ln -s /home/vagrant/Code/laravelJenkins/releases/20170609140826 /home/vagrant/Code/laravelJenkins/current-temp
 $ mv -Tf /home/vagrant/Code/laravelJenkins/current-temp /home/vagrant/Code/laravelJenkins/current
-ln -s /home/vagrant/Code/laravelJenkins/releases/20170609135446 /home/vagrant/Code/laravelJenkins/current-temp
+ln -s /home/vagrant/Code/laravelJenkins/releases/20170609140826 /home/vagrant/Code/laravelJenkins/current-temp
 mv -Tf /home/vagrant/Code/laravelJenkins/current-temp /home/vagrant/Code/laravelJenkins/current
 
-$ cd /home/vagrant/Code/laravelJenkins/releases/20170609135446
+$ cd /home/vagrant/Code/laravelJenkins/releases/20170609140826
 $ composer update
-cd /home/vagrant/Code/laravelJenkins/releases/20170609135446
+cd /home/vagrant/Code/laravelJenkins/releases/20170609140826
 composer update
 Loading composer repositories with package information
 Updating dependencies (including require-dev)
@@ -1256,35 +1231,35 @@ Generating optimized autoload files
 > php artisan optimize
 Generating optimized class loader
 The compiled services file has been removed.
-$ cd /home/vagrant/Code/laravelJenkins/releases/20170609135446
+$ cd /home/vagrant/Code/laravelJenkins/releases/20170609140826
 $ cp .env.prod .env
-cd /home/vagrant/Code/laravelJenkins/releases/20170609135446
+cd /home/vagrant/Code/laravelJenkins/releases/20170609140826
 cp .env.prod .env
 cp: cannot stat '.env.prod': No such file or directory
-$ cd /home/vagrant/Code/laravelJenkins/releases/20170609135446
+$ cd /home/vagrant/Code/laravelJenkins/releases/20170609140826
 $ php artisan key:generate
-cd /home/vagrant/Code/laravelJenkins/releases/20170609135446
+cd /home/vagrant/Code/laravelJenkins/releases/20170609140826
 php artisan key:generate
-Application key [base64:xDpr3J/C9Cp5U1D0VhTROVXq/9nte/NV/83Fqo+Tv5E=] set successfully.
-$ cd /home/vagrant/Code/laravelJenkins/releases/20170609135446
+Application key [base64:4+//TP6J0jpl1q6WRaAgzLHbRCxJhBZxJDkwgaQuKv0=] set successfully.
+$ cd /home/vagrant/Code/laravelJenkins/releases/20170609140826
 $ php artisan config:cache
-cd /home/vagrant/Code/laravelJenkins/releases/20170609135446
+cd /home/vagrant/Code/laravelJenkins/releases/20170609140826
 php artisan config:cache
 Configuration cache cleared!
 Configuration cached successfully!
-$ cd /home/vagrant/Code/laravelJenkins/releases/20170609135446
+$ cd /home/vagrant/Code/laravelJenkins/releases/20170609140826
 $ php artisan cache:clear
-cd /home/vagrant/Code/laravelJenkins/releases/20170609135446
+cd /home/vagrant/Code/laravelJenkins/releases/20170609140826
 php artisan cache:clear
 Cache cleared successfully.
-$ cd /home/vagrant/Code/laravelJenkins/releases/20170609135446
+$ cd /home/vagrant/Code/laravelJenkins/releases/20170609140826
 $ php composer dump-autload
-cd /home/vagrant/Code/laravelJenkins/releases/20170609135446
+cd /home/vagrant/Code/laravelJenkins/releases/20170609140826
 php composer dump-autload
 Could not open input file: composer
-$ cd /home/vagrant/Code/laravelJenkins/releases/20170609135446
+$ cd /home/vagrant/Code/laravelJenkins/releases/20170609140826
 $ php artisan migrate:refresh --seed
-cd /home/vagrant/Code/laravelJenkins/releases/20170609135446
+cd /home/vagrant/Code/laravelJenkins/releases/20170609140826
 php artisan migrate:refresh --seed
 Rolling back: 2014_10_12_100000_create_password_resets_table
 Rolled back:  2014_10_12_100000_create_password_resets_table
@@ -1295,5 +1270,5 @@ Migrated:  2014_10_12_000000_create_users_table
 Migrating: 2014_10_12_100000_create_password_resets_table
 Migrated:  2014_10_12_100000_create_password_resets_table
 Seeding: UserTableSeeder
-|=> Successfully deployed release 20170609135446
+|=> Successfully deployed release 20170609140826
 |=> No releases to prune from the server
